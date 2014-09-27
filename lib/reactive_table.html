@@ -51,7 +51,7 @@
       </thead>
       <tbody>
         {{#each sortedRows}}
-          <tr class="{{../rowClass this}}">
+          <tr class="{{../rowClass this}}" data-id="{{getRowId}}">
             {{#each ../fields}}
               <td class="{{key}}">{{#if tmpl}}{{#with ..}}{{> ../tmpl}}{{/with}}{{else}}{{getField ..}}{{/if}}</td>
             {{/each}}
